@@ -1,8 +1,15 @@
 import React from "react";
-import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import RoutePath from './routes'
 
-function App() {
-  return <div className="App"></div>;
+
+const App: React.FC = () =>{
+ return <div className="App">
+  <BrowserRouter>
+  <RoutePath/>
+  </BrowserRouter>
+ </div>;
 }
+
 
 export default App;
